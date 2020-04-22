@@ -43,6 +43,7 @@ nav{
 }
 
 body{
+	overflow-x:hidden;
 	width: 100vw;
 	height: 100%;
 }
@@ -52,11 +53,15 @@ body{
 	margin: 0 auto;
 
 }
-
+/*
 @keyframes spin{
 	from{transform: rotate(0deg);}
-	to{transform: rotate(60deg);}	
+	to{transform: rotate(360deg);}	
 }
+@keyframes spin1{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(-360deg);}	
+}*/
 
 .cont2{
 	overflow: hidden;
@@ -66,12 +71,8 @@ body{
 	/*background-color: #270840;*/
 	background-image: url('Images/bg.jpg');
 	background-size: cover;
-	/*animation-name: spin;
-	animation-duration: 5s;*/
 	color: white;
 }
-
-
 .introname div{
 	min-width: 100vw;
 	text-align: center;
@@ -94,10 +95,20 @@ h2{
 	margin-right: 20vw;
 	margin-bottom: 10vh;
 	padding-left: 3vw;
-	height: 70vh;
+	min-height: 70vh;
 	font-family: 'Dancing Script', cursive;
 	font-size: 1.4em;
 	color: #000f55;
+	overflow: auto;
+}
+
+i p{
+	display: none;
+	font-family: 'Dancing Script', cursive;
+}
+
+i:hover p{
+	display: block;
 }
 
 .imgcont{
